@@ -1,0 +1,11 @@
+version: "3"
+services:
+  backend:
+#    container_name: backend
+#    image: cesar/node-js
+    build: .
+    command: npm start
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/usr/app/src
